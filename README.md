@@ -8,9 +8,9 @@ HexColorNamer is an npm library that provides human-readable names for hexadecim
 
 ## Features
 
-- Convert hexadecimal color codes (e.g., "#FF5733") to descriptive color names (e.g., "Cinnabar"), or the nearest known color.
-- Supports multiple languages, including English and will support French in the future.
-- Lightweight and easy to use.
+-   Convert hexadecimal color codes (e.g., "#FF5733") to descriptive color names (e.g., "Cinnabar"), or the nearest known color.
+-   Supports multiple languages, including English and will support French in the future.
+-   Lightweight and easy to use.
 
 ## Installation
 
@@ -29,12 +29,12 @@ bun add hexcolor-namer
 ## Usage
 
 ```javascript
-const { getColorName } = require('hexcolor-namer');
+import { getColorName } from 'hexcolor-namer'
 
-const colorCode = '#FF5733';
-const { name: colorName, nearestMatching, exactMatch } = getColorName(colorCode);
+const colorCode = '#FF5733'
+const { name: colorName, nearestMatching, exactMatch } = getColorName(colorCode)
 
-console.log(`Color ${colorCode} is named "${colorName}"`);
+console.log(`Color ${colorCode} is named "${colorName}"`)
 ```
 
 ## Credits
