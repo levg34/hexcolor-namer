@@ -1,3 +1,3 @@
-import { ntc } from './colors'
+import { getColorName } from './colors'
 
-console.log(ntc.name('#C33E92'))
+console.log(getColorName('#C33E92'))
