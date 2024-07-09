@@ -60,7 +60,7 @@ export function getColorName(color: string): { colorName: string; nearestMatchin
     }
 }
 
-function name(color: string): [string, string, boolean] {
+export function name(color: string): [string, string, boolean] {
     color = color.toUpperCase()
     if (color.length < 3 || color.length > 7) return ['#000000', 'Invalid Color: ' + color, false]
     if (color.length % 3 == 0) color = '#' + color
