@@ -13,5 +13,6 @@
         "bun-plugin-dts": "^0.2.3",
         "typescript": "^5.0.0"
     },
-    "peerDependencies": {}
+    "peerDependencies": {},
+    "version": "0.1.0"
 }
