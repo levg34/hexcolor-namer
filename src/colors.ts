@@ -51,7 +51,16 @@ function init() {
     }
 }
 
-export function getColorName(color: string) {
+export function getColorName(color: string): { colorName: string; nearestMatching: string; exactMatch: boolean } {
+    const res = name(color)
+    return {
+        colorName: res[0],
+        nearestMatching: res[1],
+        exactMatch: res[2]
+    }
+}
+
+function name(color: string): [string, string, boolean] {
     color = color.toUpperCase()
     if (color.length < 3 || color.length > 7) return ['#000000', 'Invalid Color: ' + color, false]
     if (color.length % 3 == 0) color = '#' + color
