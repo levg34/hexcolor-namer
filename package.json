@@ -6,7 +6,7 @@
         "start": "bun run src/script.ts",
         "build": "bun run build.ts",
         "prepublishOnly": "bun run build",
-        "release": "bumpp && npm publish"
+        "release": "npm version minor && npm publish"
     },
     "devDependencies": {
         "@types/bun": "latest",
