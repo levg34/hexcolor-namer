@@ -2,6 +2,9 @@
     "name": "hexcolor-namer",
     "module": "src/index.ts",
     "type": "module",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "start": "bun run src/script.ts",
         "build": "bun run build.ts",
