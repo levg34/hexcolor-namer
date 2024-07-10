@@ -1,21 +1,38 @@
 {
     "name": "hexcolor-namer",
+    "version": "0.1.1",
     "module": "src/index.ts",
     "type": "module",
-    "files": [
-        "dist"
-    ],
+    "description": "Get the human name of hexadecimal colors",
     "scripts": {
         "start": "bun run src/script.ts",
         "build": "bun run build.ts",
         "prepublishOnly": "bun run build",
         "release": "npm version minor && npm publish"
     },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "hexadecimal",
+        "colors",
+        "colours",
+        "human",
+        "readable",
+        "name"
+    ],
+    "license": "GPL-3.0-only",
+    "homepage": "https://github.com/levg34/hexcolor-namer#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/levg34/hexcolor-namer.git"
+    },
+    "bugs": "https://github.com/levg34/hexcolor-namer/issues",
+    "author": "levg34 <levg34@users.noreply.github.com>",
     "devDependencies": {
         "@types/bun": "latest",
         "bun-plugin-dts": "^0.2.3",
         "typescript": "^5.0.0"
     },
-    "peerDependencies": {},
-    "version": "0.1.1"
+    "peerDependencies": {}
 }
